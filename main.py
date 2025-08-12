@@ -11,7 +11,7 @@ app = FastAPI()
 fake_user_db = {
     "zakeer": {
         "username": "zakeer",
-        "hashed_password": "secret",  # "secret"
+        "password": "secret",  # "secret"
     }
 }
 
