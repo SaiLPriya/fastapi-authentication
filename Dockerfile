@@ -16,5 +16,7 @@ COPY . .
 # Expose port 8000
 EXPOSE 8000
 
+RUN pip install python-jose[cryptography]
+
 # Command to run FastAPI with Uvicorn
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
